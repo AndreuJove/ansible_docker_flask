@@ -6,13 +6,6 @@ from waitress import serve
 
 from utils import set_config_logging, get_actual_time
 
-"""
-
-HOST: 0.0.0.0
-PORT: 8080
-
-"""
-
 app = Flask(__name__)
 
 @app.route("/clock")
@@ -29,7 +22,7 @@ def get_web_port() -> int:
   web_port = os.environ.get("WEB_PORT")
 
   if web_port is None:
-    logging.warning("WEB PORT is None using default value: 8080")
+    logging.warning("WEB PORT is None using default value: 80")
     return 80
 
   logging.info(f"Using ENV PORT: {web_port}")
