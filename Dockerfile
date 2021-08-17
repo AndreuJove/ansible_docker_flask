@@ -7,9 +7,9 @@ RUN python3 -m venv /opt/venv
 
 # Install dependencies:
 COPY requirements.txt .
-RUN .. /opt/venv/bin/activate && pip install -r requirements.txt
+RUN . /opt/venv/bin/activate && pip install -r requirements.txt
 
 # Run the application:
 RUN mkdir project
-COPY ../ /project
-CMD .. /opt/venv/bin/activate && exec python project/app/clock_app.py
+COPY ./ /project
+CMD . /opt/venv/bin/activate && exec python project/app/clock_app.py
