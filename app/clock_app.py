@@ -30,25 +30,27 @@ def get_web_port() -> int:
 
   if web_port is None:
     logging.warning("WEB PORT is None using default value: 8080")
-    return 8080
+    return 80
 
-  return web_port
+  logging.info(f"Using ENV PORT: {web_port}")
+  return int(web_port)
 
 
 def get_host_port() -> str:
   web_host = os.environ.get("WEB_HOST")
-  
+
   if web_host is None:
     logging.warning("WEB HOST is None using default value: 0.0.0.0")
     return "0.0.0.0"
 
+  logging.info(f"Using ENV HOST: {web_host}")
   return web_host
 
 
 if __name__ == "__main__":
   set_config_logging()
   web_port = get_web_port()
-  host_port = get_host_port()
-  serve(app, host=host_port, port=web_port)
+  web_host = get_host_port()
+  serve(app, host=web_host, port=web_port)
   
 
