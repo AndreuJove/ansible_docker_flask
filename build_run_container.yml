@@ -3,7 +3,7 @@
   - folder_playbook: "test_ansible"
   - dockerfile_folder: "docker_build"
   - docker_image_name: "flask-app-ansible:latest"
-  - docker_container_name: "docker"
+  - docker_container_name: "flask-app-ansible"
   - patting_http_port: "80"
   tasks:
   # - name: "Copy Docker file"
