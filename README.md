@@ -9,11 +9,6 @@ Flask application using Ansible with Docker.
 Python3 
 
 
-## Running
-
-Running the app:
-ansible-playbook build_run_container.yml
-
 ## Package installation:
 
 
