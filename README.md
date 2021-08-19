@@ -17,12 +17,10 @@ ansible-playbook build_run_container.yml
 ## Package installation:
 
 
-1) sudo-apt get install alsible
-2) git clone https://github.com/AndreuJove/alpine_docker_flask.git
-3) cd alpine_docker_flask
-4) 
-5)
-6)
+1) git clone https://github.com/AndreuJove/alpine_docker_flask.git
+2) cd alpine_docker_flask
+3) chmod +x install.sh
+4) install.sh
 
 
 ## Build with:
