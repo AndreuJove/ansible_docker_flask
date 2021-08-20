@@ -19,8 +19,10 @@ Python3.
 2) Download Virtual Machine Manager.
 3) Create the VM using the `debian10-ssh.img.tar.xz` file and XML file for the configuration of the VM.
 4) Run the VM.
-5) Connect to the virtual machine using: ssh -i /path/to/rsa.pub root@192.168.122.188
-
+5) Connect to the virtual machine using: 
+    ```console
+    ssh -i /path/to/rsa.pub root@192.168.122.188
+    ```
 
 
 ## Interesting commands:
