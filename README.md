@@ -24,14 +24,18 @@ Python3.
 
 
 ## Interesting commands:
-| Command        | What it does | 
-| ------------- |:-------------:| 
-| virsh net-dumpxml default      | Command to view the connections | 
-| ls -al ~/.ssh      | List ssh keys      |  
-|  |      | 
+
+Command to view the connections:
+- virsh net-dumpxml default
+
+List ssh keys:
+- ls -al ~/.ssh
 
 
 ## Package installation:
+
+1) Enter VM using ssh.
+2) Install git if not
 
 
 1) git clone https://github.com/AndreuJove/alpine_docker_flask.git
