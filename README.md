@@ -8,7 +8,7 @@ Flask application using Ansible with Docker.
 
 Python3 
 
-
+<br />
 ## VM Machine installation:
 
 1) Download and unzip de `debian10-ssh.img.tar.xz`
@@ -23,6 +23,7 @@ Interesting commands:
 2) List ssh keys:
   `ls -al ~/.ssh`
 
+<br />
 ## Package installation:
 
 
