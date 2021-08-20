@@ -37,13 +37,22 @@ List ssh keys:
 ## Package installation:
 
 1) Enter VM using ssh.
-2) Install git if not
+2) Install git if not installed.
 
 
 1) git clone https://github.com/AndreuJove/alpine_docker_flask.git
 2) cd alpine_docker_flask
 3) chmod +x install.sh
-4) install.sh
+4) ./install.sh
+
+
+"""""""
+Steps that I'm doing in the VM:
+
+sudo apt-get update
+sudo apt install git
+
+"""""""
 
 
 ## Build with:
