@@ -2,13 +2,17 @@
 
 Flask application using Ansible with Docker.
 
-<br />
+======
+
 
 ## Requirements
 
-Python3 
+Python3.
 
-<br />
+
+======
+
+
 ## VM Machine installation:
 
 1) Download and unzip de `debian10-ssh.img.tar.xz`
@@ -17,13 +21,16 @@ Python3
 4) Run the VM.
 5) Connect to the virtual machine using: ssh -i /path/to/rsa.pub root@192.168.122.188
 
-Interesting commands:
-1) Command to view the connections:
-  `virsh net-dumpxml default`
-2) List ssh keys:
-  `ls -al ~/.ssh`
+======
 
-<br />
+## Interesting commands:
+| Command        | What it does | 
+| ------------- |:-------------:| 
+| virsh net-dumpxml default      | Command to view the connections | 
+| ls -al ~/.ssh      | List ssh keys      |  
+|  |      | 
+
+======
 ## Package installation:
 
 
@@ -31,22 +38,22 @@ Interesting commands:
 2) cd alpine_docker_flask
 3) chmod +x install.sh
 4) install.sh
-
+======
 
 ## Build with:
 - [Ansible](https://docs.ansible.com/).
 - [Docker](https://www.docker.com/).
 - [Flask](https://flask.palletsprojects.com/en/2.0.x/)
-<br />
 
+
+======
 
 ## Authors
 
 - Andreu Jové
 
-<br />
 
-
+======
 ## License
 
 - This project is licensed under the GNU GENERAL PUBLIC LICENSE Version 3 - see the [LICENSE.MD](https://github.com/AndreuJove/alpine_docker_flask/blob/master/LICENSE.MD) file for details.
