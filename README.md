@@ -51,6 +51,7 @@ Steps that I'm doing in the VM:
 
 sudo apt-get update
 sudo apt install git
+apt-get install ansible
 
 """""""
 
