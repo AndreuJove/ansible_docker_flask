@@ -40,31 +40,38 @@ Choose to install GRUB in the device: /dev/vda
 ```
 https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-debian-10
 ```
-9) Install ansible by python3
+
+9) Install pip:
+    ```console
+    sudo apt install python3-pip
+    ```
+
+
+10) Install ansible by python3
     ```console
     pip3 install ansible
     ```
-10) Install docker python package (required to build an image inside ansible):
-        ```console
+11) Install docker python package (required to build an image inside ansible):
+    ```console
     pip3 install docker
     ```
 
-11) Run:
-        ```console
+12) Run:
+    ```console
     git clone https://github.com/AndreuJove/alpine_docker_flask.git
     ```
 
-12) Move to the project directory:
+13) Move to the project directory:
 ```console
 cd alpine_docker_flask
 ```
 
-13) Run the playbook of build and run the container:
+14) Run the playbook of build and run the container:
 ```console
 ansible-playbook build_run_container.yml
 ```
 
-14) Check that the container is running using:
+15) Check that the container is running using:
 ```console
 docker ps
 ```
