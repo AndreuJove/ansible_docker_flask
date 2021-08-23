@@ -5,11 +5,6 @@
   - docker_container_name: "flask-app-ansible"
   - patting_http_port: "80"
   tasks:
-  # - name: "Copy Docker file"
-  #   copy:
-  #    src: "app/{{dockerfile_folder}}"
-  #    dest: "{{folder_playbook}}"
-
   - name: "Build Docker image from Dockerfile"
     docker_image:
        name:  "{{docker_image_name}}"
@@ -28,24 +23,3 @@
        - "80:{{patting_http_port}}"
     register: docker_info
 
-
-  # - name: "Update inventory file"
-  #   lineinfile:
-  #     path: hosts
-  #     insertafter: '^\[containers]'
-  #     firstmatch: yes
-  #     line: "{{docker_info.ansible_facts.docker_container.NetworkSettings.IPAddress}}"
-  #     state: present
-
-# # play to wirte entry in ansible inventory
-# - name: "Update inventory file"
-#   hosts: localhost
-#   tags: inventory
-#   tasks:
-#   - command: cat hosts
-#     register: inventory_data
-#   - debug:
-#        var: groups.docker_host
-#   - shell: echo "{{ item }} ansible_ssh_user=docker ansible_ssh_port=5555" >> ./hosts
-#     when:  "'{{ item }} ansible_ssh_user=docker ansible_ssh_port=5555' not in inventory_data.stdout"
-#     loop: "{{groups.docker_host}}"
