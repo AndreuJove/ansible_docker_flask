@@ -40,7 +40,7 @@ $ dpkg --configure -a
 
 Choose to install GRUB in the device: /dev/vda
 
-7. Install [Docker](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-debian-10) using the steps.
+7. Install [Docker](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-debian-10) following the steps.
 
 8. Install python package docker:
 
@@ -66,7 +66,7 @@ $ cd ansible_docker_flask
 
 10. Change the path for `private_key_file` in file `ansible.cfg` for your path to the rsa key.
 
-11. Run the playbook using the deploy.yml:
+11. Run the playbook using the `deploy.yml`:
 
 ```console
 $ ansible-playbook deploy.yml -i ./hosts.yml
