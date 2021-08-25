@@ -40,8 +40,7 @@ $ dpkg --configure -a
 
 Choose to install GRUB in the device: /dev/vda
 
-7. Install docker using the next following steps:
-   https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-debian-10
+7. Install [Docker](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-debian-10) using the steps.
 
 8. Install python package docker:
 
