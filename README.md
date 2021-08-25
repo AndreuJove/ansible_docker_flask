@@ -11,16 +11,16 @@ Flask application using Ansible with Docker in a debian-10 Virtual Machine.
 
 ## VM Requirements:
 
-- [Python3] (https://www.python.org/downloads/)
+- [Python3](https://www.python.org/downloads/)
 - Pip (apt install python3-pip)
-- [Docker] (https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-debian-10)
+- [Docker](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-debian-10)
 - Docker python package (pip3 install docker)
 
 
 ## VM SETUP:
 
 1) Download and unzip de `debian10-ssh.img.tar.xz`
-2) Download Virtual Machine Manager (https://virt-manager.org/download/)
+2) Download [Virtual Machine Manager](https://virt-manager.org/download/) or do it via command line.
 3) Create the VM using the `debian10-ssh.img.tar.xz` file and XML file for the configuration of the VM.
 4) Run the VM using Virtual Machine Manager or other application.
 5) Connect to the virtual machine using: 
