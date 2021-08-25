@@ -64,7 +64,9 @@ pip3 install docker
 $ cd ansible_docker_flask
 ```
 
-10. Run the playbook using the deploy.yml:
+10. Change the path for `private_key_file` in file `ansible.cfg` for your path to the rsa key.
+
+11. Run the playbook using the deploy.yml:
 
 ```console
 $ ansible-playbook deploy.yml -i ./hosts.yml
