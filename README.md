@@ -79,11 +79,14 @@ $ docker ps
 ## Interesting commands:
 
 Command to view the connections:
-- $ virsh net-dumpxml default
+```console
+$ virsh net-dumpxml default
+```
 
 List ssh keys:
-- $ ls -al ~/.ssh
-
+```
+$ ls -al ~/.ssh
+```
 
 
 ## Notes
