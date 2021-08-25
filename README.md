@@ -1,6 +1,6 @@
 ## Package Crawler description:
 
-Flask application using Ansible with Docker.
+Flask application using Ansible with Docker in a debian-10 Virtual Machine.
 
 
 
