@@ -21,20 +21,20 @@ Python3.
 4) Run the VM using Virtual Machine Manager.
 5) Connect to the virtual machine using: 
     ```console
-    ssh -i /path/to/rsa.pub root@192.168.122.188
+    $ ssh -i /path/to/rsa.pub root@192.168.122.188
     ```
 
 ## VM SETUP:
 
 6) Solve dpkg problems using:
 ```console
-sudo dpkg --configure -a
+$ dpkg --configure -a
 ```
 Choose to install GRUB in the device: /dev/vda
 
 7) Install git:
     ```console
-    apt install git
+    $ apt install git
     ```
 8) Install docker using the next following steps:
 ```
@@ -43,47 +43,47 @@ https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-o
 
 9) Install pip:
     ```console
-    sudo apt install python3-pip
+    $ apt install python3-pip
     ```
 
 
 10) Install ansible by python3
     ```console
-    pip3 install ansible
+    $ pip3 install ansible
     ```
 11) Install docker python package (required to build an image inside ansible):
     ```console
-    pip3 install docker
+    $ pip3 install docker
     ```
 
 12) Run:
     ```console
-    git clone https://github.com/AndreuJove/alpine_docker_flask.git
+    $ git clone https://github.com/AndreuJove/alpine_docker_flask.git
     ```
 
 13) Move to the project directory:
 ```console
-cd alpine_docker_flask
+$ cd alpine_docker_flask
 ```
 
 14) Run the playbook of build and run the container:
 ```console
-ansible-playbook build_run_container.yml
+$ ansible-playbook build_run_container.yml
 ```
 
 15) Check that the container is running using:
 ```console
-docker ps
+$ docker ps
 ```
 
 
 ## Interesting commands:
 
 Command to view the connections:
-- virsh net-dumpxml default
+- $ virsh net-dumpxml default
 
 List ssh keys:
-- ls -al ~/.ssh
+- $ ls -al ~/.ssh
 
 
 
@@ -94,7 +94,7 @@ List ssh keys:
 Using the next command we install ansible 2.7 to build a container image from a ansible playbook we need newer versions.
 
 ```console
-apt-get install ansible
+$ apt-get install ansible
 ```
 ------
 
